@@ -1,0 +1,29 @@
+{
+    "name": "bkrukowski/challenges",
+    "description": "\"Hybrid Analysis Challenges\"",
+    "require": {
+        "php": "^7.1",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bartłomiej Krukowski",
+            "email": "bartlomiej@krukowski.me"
+        }
+    ],
+    "autoload": {
+        "files": ["src/functions_include.php"],
+        "psr-4": {
+            "bkrukowski\\Challenges\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "bkrukowski\\Challenges\\": "tests/"
+        }
+    }
+}

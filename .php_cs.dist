@@ -1,0 +1,20 @@
+<?php
+
+$finder = PhpCsFixer\Finder::create()
+    ->in(__DIR__ . DIRECTORY_SEPARATOR . 'src')
+    ->in(__DIR__ . DIRECTORY_SEPARATOR . 'tests')
+;
+
+return PhpCsFixer\Config::create()
+    ->setRules([
+        '@PSR2' => true,
+        'declare_strict_types' => true,
+        'array_syntax' => ['syntax' => 'short'],
+        'no_unused_imports' => true,
+        'yoda_style' => true,
+        'new_with_braces' => true,
+        'native_function_invocation' => true,
+        'phpdoc_align' => true,
+    ])
+    ->setFinder($finder)
+;
