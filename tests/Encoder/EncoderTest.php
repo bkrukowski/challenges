@@ -30,6 +30,7 @@ final class EncoderTest extends TestCase
     {
         return [
             ['2e1Ca', 'secretinformation', 'ecrseonftiiatrm   on'],
+            ['2e1Ca', 'łóżńęąś', 'ężńłó   ąś'],
             ['5Ra7q', 'Fibbonaci', 'bFiobina c'],
             ['1', 'Foo ', 'Foo '],
         ];
@@ -51,6 +52,7 @@ final class EncoderTest extends TestCase
     {
         return [
             ['2e1Ca', 'ollHelor W   d', 'Hello World'],
+            ['2e1Ca', 'ężńłó   ąś', 'łóżńęąś'],
             ['1', 'Foo ', 'Foo'],
         ];
     }
